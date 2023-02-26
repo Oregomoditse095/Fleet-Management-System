@@ -1,0 +1,15 @@
+JAPTECH BOOKING QUOTE
+----------------------------------
+Trip ID: R104
+Driver Number: Emp110
+Vehicle Number: V134
+Customer Email: Deku@MHA.com
+Type of goods: Flower(s)
+Quantity: 100
+Place of departure: Durban
+Place of destination: Port Elizabeth
+Departure date & time: 2021/12/08 12:07:21
+Destination date & time: 2021/12/09 12:07:21
+Deposit amount due: R2000
+----------------------------------
+Disclaimer: If customers are unable to pay the initial deposit within 72 hours from the time of booking, the booking will be deemed invalid and therefore cancelled
