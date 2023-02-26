@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B9890AD5-6D32-4950-A96A-2981E3DC80D6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>JAPTECH_FLEET_MANAGEMENT_SYSTEM</RootNamespace>
+    <AssemblyName>JAPTECH FLEET MANAGEMENT SYSTEM</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\thori\source\repos\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>8F783D63421EE3DA4E42A48ED7A17AA88D805B86</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>JAPTECH FLEET MANAGEMENT SYSTEM_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Appointments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Appointments.designer.cs">
+      <DependentUpon>Appointments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppointmentsScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AppointmentsScreen.designer.cs">
+      <DependentUpon>AppointmentsScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Book.cs" />
+    <Compile Include="Bookings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bookings.Designer.cs">
+      <DependentUpon>Bookings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="custRegcs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="custRegcs.Designer.cs">
+      <DependentUpon>custRegcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delegations.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Delegations.Designer.cs">
+      <DependentUpon>Delegations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Emergencies.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Emergencies.Designer.cs">
+      <DependentUpon>Emergencies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpRegistration.Designer.cs">
+      <DependentUpon>EmpRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLEET_MANAGEMENT_DATABASEDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FLEET_MANAGEMENT_DATABASEDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FLEET_MANAGEMENT_DATABASEDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FLEET_MANAGEMENT_DATABASEDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FLEET_MANAGEMENT_DATABASEDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FLEET_MANAGEMENT_DATABASEDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JobSheet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="JobSheet.designer.cs">
+      <DependentUpon>JobSheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OfficeManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OfficeManager.Designer.cs">
+      <DependentUpon>OfficeManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recordings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Recordings.Designer.cs">
+      <DependentUpon>Recordings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Records.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Records.Designer.cs">
+      <DependentUpon>Records.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimesheetManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimesheetManager.Designer.cs">
+      <DependentUpon>TimesheetManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TripBookings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TripBookings.Designer.cs">
+      <DependentUpon>TripBookings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TripManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TripManager.Designer.cs">
+      <DependentUpon>TripManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateTimesheet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UpdateTimesheet.Designer.cs">
+      <DependentUpon>UpdateTimesheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Veh_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Veh_Admin.designer.cs">
+      <DependentUpon>Veh_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewBookings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewBookings.Designer.cs">
+      <DependentUpon>ViewBookings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTimesheet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewTimesheet.Designer.cs">
+      <DependentUpon>ViewTimesheet.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Appointments.resx">
+      <DependentUpon>Appointments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppointmentsScreen.resx">
+      <DependentUpon>AppointmentsScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bookings.resx">
+      <DependentUpon>Bookings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custRegcs.resx">
+      <DependentUpon>custRegcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delegations.resx">
+      <DependentUpon>Delegations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Emergencies.resx">
+      <DependentUpon>Emergencies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpRegistration.resx">
+      <DependentUpon>EmpRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JobSheet.resx">
+      <DependentUpon>JobSheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OfficeManager.resx">
+      <DependentUpon>OfficeManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Recordings.resx">
+      <DependentUpon>Recordings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Records.resx">
+      <DependentUpon>Records.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimesheetManager.resx">
+      <DependentUpon>TimesheetManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TripBookings.resx">
+      <DependentUpon>TripBookings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TripManager.resx">
+      <DependentUpon>TripManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateTimesheet.resx">
+      <DependentUpon>UpdateTimesheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Veh_Admin.resx">
+      <DependentUpon>Veh_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewBookings.resx">
+      <DependentUpon>ViewBookings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewTimesheet.resx">
+      <DependentUpon>ViewTimesheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="FLEET_MANAGEMENT_DATABASEDataSet.xsc">
+      <DependentUpon>FLEET_MANAGEMENT_DATABASEDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FLEET_MANAGEMENT_DATABASEDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FLEET_MANAGEMENT_DATABASEDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FLEET_MANAGEMENT_DATABASEDataSet.xss">
+      <DependentUpon>FLEET_MANAGEMENT_DATABASEDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FLEET_MANAGEMENT_DATABASEDataSet1.xsc">
+      <DependentUpon>FLEET_MANAGEMENT_DATABASEDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="FLEET_MANAGEMENT_DATABASEDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FLEET_MANAGEMENT_DATABASEDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FLEET_MANAGEMENT_DATABASEDataSet1.xss">
+      <DependentUpon>FLEET_MANAGEMENT_DATABASEDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="FLEET_MANAGEMENT_DATABASEDataSet2.xsc">
+      <DependentUpon>FLEET_MANAGEMENT_DATABASEDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="FLEET_MANAGEMENT_DATABASEDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FLEET_MANAGEMENT_DATABASEDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FLEET_MANAGEMENT_DATABASEDataSet2.xss">
+      <DependentUpon>FLEET_MANAGEMENT_DATABASEDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="JAPTECH FLEET MANAGEMENT SYSTEM_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
